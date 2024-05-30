@@ -10,10 +10,13 @@ Once finalised we can create scripts if needed.
 1. [Full Guide on DSJob](https://github.com/IBM/DataStage/blob/main/dsjob/dsjob.4.8.5.md)
 2. [Export Import Blog](https://github.com/IBM/DataStage/blob/main/dsjob/blogs/export-import.md)
 
+### Prerequisites
+Download CPDCTL executable from: https://github.com/IBM/cpdctl/releases to a local folder. 
+Then add your local folder to your system path to ensure cpdctl can be executed anywhere.
 
 ### Notebook Examples
 1. [Export a whole project](./export_whole_project.sh)
-2. [datastagae and pipeline assets Import to a new project](./import_whole_project.ipynb)
+2. [Import datastagae and pipeline assets to a new project](./import_whole_project.ipynb)
 3. [Export all datastagae and pipeline contents](./export_ds_wp_project.ipynb)
 4. [Export selected datastagae and pipeline assets](./export_assets.ipynb)
 5. [Import zip file to a new or existing projects](./import_zip_2_project.ipynb)
