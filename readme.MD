@@ -12,7 +12,7 @@ Once finalised we can create scripts if needed.
 
 ### Prerequisites
 Download CPDCTL executable from: https://github.com/IBM/cpdctl/releases to a local folder. 
-Then add your local folder to your system path to ensure cpdctl can be executed anywhere.
+Then add the local folder to your system path to ensure cpdctl can be executed anywhere.
 
 ### Notebook Examples
 1. [Export a whole project](./export_whole_project.sh)
