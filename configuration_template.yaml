@@ -1,6 +1,5 @@
-credentials:
-  url: your_cpd_url
-  user: "jbtang"
-  password: "Suri2008"
-
+url: "your cpd url"
+user: "you cpd user name"
+password: "your cpd password"
+project_name: "your cpd project name"
 
