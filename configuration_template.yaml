@@ -1,5 +1,14 @@
 url: "your cpd url"
 user: "you cpd user name"
 password: "your cpd password"
-project_name: "your cpd project name"
 
+export_prj_name: "Multicloud Data Integration L3 Tech Lab"
+import_prj_name: "DataStage Import"
+
+# Optional
+export_zip_name: "xxx.zip"
+
+# Asset List: only needed when export assets to a zip file
+datastages: ["Employee Ranking"]
+pipelines: ["Pipeline1","Pipeline2"]
+testcases: []
