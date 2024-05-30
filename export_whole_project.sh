@@ -35,20 +35,20 @@ cpdctl config profile use CP4D-profile
 # list all projects
 cpdctl dsjob list-projects
 
-PRJ_NAME=$(yq e '.project_name' "$CONFIG_FILE")
-echo $PRJ_NAME
-FILENAME="${PRJ_NAME}.zip"
+EXPORT_PRJ_NAME=$(yq e '.export_prj_name' "$CONFIG_FILE")
+echo $EXPORT_PRJ_NAME
+EXPORT_ZIP_NAME="${EXPORT_PRJ_NAME}.zip"
 
-echo $FILENAME
+echo $EXPORT_ZIP_NAME
 #cpdctl dsjob export {--project PROJECT | --project-id PROJID} --name NAME [--description DESCRIPTION]
-# [--export-file FILENAME] [--wait secs] [--asset-type TYPE] [--asset <name,type>...] [--all]
+# [--export-file EXPORT_ZIP_NAME] [--wait secs] [--asset-type TYPE] [--asset <name,type>...] [--all]
 
-cpdctl dsjob export --project "$PRJ_NAME" --name "$PRJ_NAME" --export-file "$FILENAME" --wait -1
-cpdctl dsjob save-export --project "$PRJ_NAME" --name "$PRJ_NAME" --export-file "$FILENAME"
+cpdctl dsjob export --project "$EXPORT_PRJ_NAME" --name "$EXPORT_PRJ_NAME" --export-file "$EXPORT_ZIP_NAME" --wait -1
+cpdctl dsjob save-export --project "$EXPORT_PRJ_NAME" --name "$EXPORT_PRJ_NAME" --export-file "$EXPORT_ZIP_NAME"
 
 # using project ID
-#cpdctl dsjob export --project-id a6522d00-be51-48f5-bf66-7a53b04d064d --name "$PRJ_NAME" --export-file $FILENAME --wait -1
-#cpdctl dsjob save-export --project-id a6522d00-be51-48f5-bf66-7a53b04d064d --name "$PRJ_NAME" --export-file $FILENAME
+#cpdctl dsjob export --project-id a6522d00-be51-48f5-bf66-7a53b04d064d --name "$EXPORT_PRJ_NAME" --export-file $EXPORT_ZIP_NAME --wait -1
+#cpdctl dsjob save-export --project-id a6522d00-be51-48f5-bf66-7a53b04d064d --name "$EXPORT_PRJ_NAME" --export-file $EXPORT_ZIP_NAME
 
 
 
