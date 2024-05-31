@@ -16,7 +16,7 @@ Then add the local folder to your system path to ensure cpdctl can be executed a
 
 ### Notebook Examples
 1. [Export a whole project](./export_whole_project.sh)
-2. [Import datastagae and pipeline assets to a new project](./import_whole_project.ipynb)
+2. [Import to a new project](./import_whole_project.ipynb)
 3. [Export all datastagae and pipeline contents](./export_ds_wp_project.ipynb)
 4. [Export selected datastagae and pipeline assets](./export_assets.ipynb)
 5. [Import zip file to a new or existing projects](./import_zip_2_project.ipynb)
