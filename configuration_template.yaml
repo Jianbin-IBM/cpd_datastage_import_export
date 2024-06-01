@@ -5,10 +5,13 @@ password: "your cpd password"
 export_prj_name: "Multicloud Data Integration L3 Tech Lab"
 import_prj_name: "DataStage Import"
 
-# Optional
+# Optional:
+# When not defined, export to [export_prj_name].zip
 export_zip_name: "xxx.zip"
 
-# Asset List: only needed when export assets to a zip file
+# Optional
+# Only will be used when invokes corresponding export-xxx command
 datastages: ["Employee Ranking"]
 pipelines: ["Pipeline1","Pipeline2"]
 testcases: []
+parameter_sets: ["JB_parameter_set","paraset2"]

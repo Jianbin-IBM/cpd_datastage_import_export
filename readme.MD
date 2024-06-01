@@ -22,7 +22,7 @@ To align with command, every notebook or script examples are named with "command
 1. [Export a whole project](./export.ipynb)
 2. [Import to a new project](./import.ipynb)
    
-"import-zip" can used to import zip files exported with any "export-xxx" except "export".
+"import-zip" can be used to import zip files exported with any "export-xxx" except "export".
 1. [Import zip file to a new or existing projects](./import_zip_2_project.ipynb)
    
 There are many "export-xxx" supported.  
@@ -30,9 +30,10 @@ There are many "export-xxx" supported.
 "export-zip" is used to export multiple types of assets with one command.
 Other "export-xxx", eg "export-parameter-set", "export-pipeline", "export-connection"and so on 
 are used to export specific types of assets.
-2. [Export all datastagae and pipeline contents](./export_ds_wp_project.ipynb)
-3. [Export selected datastagae and pipeline assets](./export_assets.ipynb)
-
+1. [Export all datastagae and pipeline contents with "export-project"](./export-project.ipynb) -- Not recommend
+2. [Export all datastagae and pipeline contents with "export-datastage-assets"](./export-datastage-assets.ipynb) -- Recommend
+3. [Export selected datastagae and pipeline assets](./export-zip.ipynb)
+4. [Export parameter sets which also contain value sets](./export-parameter-set.ipynb)
 
 ### How to run a script
 For example, to export a whole project and save it as a zip file as [your project name].zip
