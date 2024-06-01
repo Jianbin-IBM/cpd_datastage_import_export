@@ -15,28 +15,29 @@ Download CPDCTL executable from: https://github.com/IBM/cpdctl/releases to a loc
 Then add the local folder to your system path to ensure cpdctl can be executed anywhere.
 
 ### Notebook Examples
-1. [Export a whole project](./export_whole_project.sh)
-2. [Import to a new project](./import_whole_project.ipynb)
-3. [Export all datastagae and pipeline contents](./export_ds_wp_project.ipynb)
-4. [Export selected datastagae and pipeline assets](./export_assets.ipynb)
-5. [Import zip file to a new or existing projects](./import_zip_2_project.ipynb)
+Every command format is "cpdctl dsjob command-xxx". 
+To align with command, every notebook or script examples are named with "command-xxx"
 
-### Script Examples
-To export a whole project and save it as a zip file as [your project name].zip
+"export" and "import" are paired together and only be used to export and import an entire project.
+1. [Export a whole project](./export.ipynb)
+2. [Import to a new project](./import.ipynb)
+   
+"import-zip" can used to import zip files exported with any "export-xxx" except "export".
+1. [Import zip file to a new or existing projects](./import_zip_2_project.ipynb)
+   
+There are many "export-xxx" supported.  
+"export-datastage-assets" is recommended to export all the datastage and pipeline assets, but not "export-project".
+"export-zip" is used to export multiple types of assets with one command.
+Other "export-xxx", eg "export-parameter-set", "export-pipeline", "export-connection"and so on 
+are used to export specific types of assets.
+2. [Export all datastagae and pipeline contents](./export_ds_wp_project.ipynb)
+3. [Export selected datastagae and pipeline assets](./export_assets.ipynb)
+
+
+### How to run a script
+For example, to export a whole project and save it as a zip file as [your project name].zip
 - Step 1. create a copy of "configuration_template.yaml" as "yourown.yaml" and modify accordingly
 - Step 2. Run
 ```sh ./export_whole_project.sh [yourown.yaml]```
   
-
-### Please note the differences in the below commands:
-
-#### About Export:
-1. "cpdctl dsjob export" is to export **all types of contents** under a project
-2. "cpdctl dsjob export-project" is **only to export DataStage&Pipeline related contents** under a project
-3. "cpdctl dsjob export-zip" is to export specific DataStage and/or Pipeline assets under a project
-   
-#### About Import:
-1. "cpdctl dsjob import" is to import **all types of contents** under a project, which must go to a newly created project.
-2. "cpdctl dsjob import-zip" can be used to import both from  "cpdctl dsjob export-project" and "cpdctl dsjob export-zip" to a new or existing project.
-
-
+  
