@@ -1,23 +1,21 @@
 # Usage
 
 This is a repo to demo how to export and import datastage and pipeline projects and assets.
-
-We start with notebook since it gave a clear input/output for people to understand and test the process. 
+We start with notebook example since it gave a clear input/output for people to understand and test the process. 
 Once finalised we can create scripts if needed. 
 
 There are many commands in [Full Command on DSJob](https://github.com/IBM/DataStage/blob/main/dsjob/dsjob.4.8.5.md).
 Overall, all the commands can be divided into 3 groups
 
-1. Group 1: "export" and "import"
+#### Group 1: "export" and "import"
 "export" and "import" are paired together and only be used to export and import an entire project.
    
-2. Group 2:"export-xxx" and "import-zip"
+####  Group 2:"export-xxx" and "import-zip"
 "export-xxx" will export to a zip file. And "import-zip" can import any zip file to a project
 
-3. Group 3: "get-xxx","list-xxx","create-xxx","delete-xxx" and "update-xxx"
+#### Group 3: "get-xxx","list-xxx","create-xxx","delete-xxx" and "update-xxx"
 xxx will be specific resources or assets. It uses JSON output or JSON file instead of zip file
-
-
+   
 ### Main Referenencs
 1. [Full Command on DSJob](https://github.com/IBM/DataStage/blob/main/dsjob/dsjob.4.8.5.md)
 2. [Export Import Blog](https://github.com/IBM/DataStage/blob/main/dsjob/blogs/export-import.md)
