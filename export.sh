@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Check if the config file parameter is provided
+# you can export_import_whole_project.yaml to test
 if [ $# -ne 1 ]; then
   echo "Usage: $0 <config.yaml>"
   exit 1

@@ -46,3 +46,4 @@ r42_env
 
 # not track test folder
 test
+.json
