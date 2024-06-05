@@ -28,7 +28,8 @@ Then add the local folder to your system path to ensure cpdctl can be executed a
 1. [Export and Import a whole project](./export_import_whole_project.ipynb)
 2. [Export and Import Parameter Set](./export_import_parameter_set.ipynb)
 3. [Export and Import Value Set](./export_import_value_set.ipynb)
-4. [Export and Import Selected Assets](./export_import_selected_assets.yaml)
+4. [Export and Import Selected Assets](./export_import_selected_assets.ipynb)
+5. [Export and Import DataStage FLow Assets](./export_import_flow.ipynb)
 
 
 ### Script Examples
